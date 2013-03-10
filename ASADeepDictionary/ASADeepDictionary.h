@@ -1,5 +1,5 @@
 //
-//  main.m
+//  ASADeepDictionary.h
 //  ASADeepDictionary
 //
 //  Created by AndrewShmig on 3/10/13.
@@ -7,16 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ASADeepDictionary.h"
 
-int main(int argc, const char * argv[])
-{
-  @autoreleasepool {
-    
-    
-    
-  }
+@interface ASADeepDictionary : NSObject
 
-  return 0;
-}
+- (id)initWithDictionary:(NSDictionary *)dictionary;
 
+- (NSData *)JSON;
+
+@end

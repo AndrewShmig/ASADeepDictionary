@@ -10,6 +10,7 @@
 		D50F376016ECC9F700646710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50F375F16ECC9F700646710 /* Foundation.framework */; };
 		D50F376316ECC9F700646710 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D50F376216ECC9F700646710 /* main.m */; };
 		D50F376716ECC9F700646710 /* ASADeepDictionary.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D50F376616ECC9F700646710 /* ASADeepDictionary.1 */; };
+		D50F377016ECCB8100646710 /* ASADeepDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D50F376F16ECCB8100646710 /* ASADeepDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		D50F376216ECC9F700646710 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D50F376516ECC9F700646710 /* ASADeepDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASADeepDictionary-Prefix.pch"; sourceTree = "<group>"; };
 		D50F376616ECC9F700646710 /* ASADeepDictionary.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ASADeepDictionary.1; sourceTree = "<group>"; };
+		D50F376E16ECCB8100646710 /* ASADeepDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASADeepDictionary.h; sourceTree = "<group>"; };
+		D50F376F16ECCB8100646710 /* ASADeepDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASADeepDictionary.m; sourceTree = "<group>"; };
+		D56F3CCC16ECE664006E04A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 		D50F375316ECC9F700646710 = {
 			isa = PBXGroup;
 			children = (
+				D56F3CCC16ECE664006E04A5 /* README.md */,
+				D50F376D16ECCB5E00646710 /* ASADeepDictionary Class */,
 				D50F376116ECC9F700646710 /* ASADeepDictionary */,
 				D50F375E16ECC9F700646710 /* Frameworks */,
 				D50F375D16ECC9F700646710 /* Products */,
@@ -86,6 +92,15 @@
 				D50F376516ECC9F700646710 /* ASADeepDictionary-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D50F376D16ECCB5E00646710 /* ASADeepDictionary Class */ = {
+			isa = PBXGroup;
+			children = (
+				D50F376E16ECCB8100646710 /* ASADeepDictionary.h */,
+				D50F376F16ECCB8100646710 /* ASADeepDictionary.m */,
+			);
+			name = "ASADeepDictionary Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D50F376316ECC9F700646710 /* main.m in Sources */,
+				D50F377016ECCB8100646710 /* ASADeepDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +256,7 @@
 				D50F376C16ECC9F700646710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
