@@ -13,7 +13,12 @@ int main(int argc, const char * argv[])
 {
   @autoreleasepool {
     
+    ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
     
+    [dd setValue:@"Hello deep dictionary!"
+          forKey:@"cookies.user.demo.login.temporaryInfo.msg"];
+    
+    NSLog(@"%@", dd);
     
   }
 

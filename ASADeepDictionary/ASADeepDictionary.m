@@ -52,7 +52,8 @@
   [pathComponents
    enumerateObjectsUsingBlock:^(id pathComponent, NSUInteger idx, BOOL *stop) {
      
-     if(currentNode[pathComponent] == nil)
+     if(currentNode[pathComponent] == nil ||
+        ![currentNode[pathComponent] isKindOfClass:[NSDictionary class]])
         [currentNode setValue:[NSMutableDictionary dictionary]
                        forKey:pathComponent];
      
