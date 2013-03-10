@@ -12,6 +12,7 @@
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
+- (NSMutableDictionary *)deepDictionary;
 - (NSData *)JSON;
 
 @end

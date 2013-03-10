@@ -102,6 +102,10 @@
   return [_deepDictionary description];
 }
 
+- (NSMutableDictionary *)deepDictionary {
+  return [_deepDictionary copy];
+}
+
 #pragma mark - Dealloc
 - (void)dealloc {
   [_deepDictionary release];
