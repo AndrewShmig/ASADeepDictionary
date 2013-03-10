@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D50F376016ECC9F700646710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50F375F16ECC9F700646710 /* Foundation.framework */; };
+		D50F376316ECC9F700646710 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D50F376216ECC9F700646710 /* main.m */; };
+		D50F376716ECC9F700646710 /* ASADeepDictionary.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D50F376616ECC9F700646710 /* ASADeepDictionary.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D50F375A16ECC9F700646710 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				D50F376716ECC9F700646710 /* ASADeepDictionary.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D50F375C16ECC9F700646710 /* ASADeepDictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ASADeepDictionary; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50F375F16ECC9F700646710 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D50F376216ECC9F700646710 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D50F376516ECC9F700646710 /* ASADeepDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASADeepDictionary-Prefix.pch"; sourceTree = "<group>"; };
+		D50F376616ECC9F700646710 /* ASADeepDictionary.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ASADeepDictionary.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D50F375916ECC9F700646710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50F376016ECC9F700646710 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D50F375316ECC9F700646710 = {
+			isa = PBXGroup;
+			children = (
+				D50F376116ECC9F700646710 /* ASADeepDictionary */,
+				D50F375E16ECC9F700646710 /* Frameworks */,
+				D50F375D16ECC9F700646710 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D50F375D16ECC9F700646710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D50F375C16ECC9F700646710 /* ASADeepDictionary */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D50F375E16ECC9F700646710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D50F375F16ECC9F700646710 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D50F376116ECC9F700646710 /* ASADeepDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D50F376216ECC9F700646710 /* main.m */,
+				D50F376616ECC9F700646710 /* ASADeepDictionary.1 */,
+				D50F376416ECC9F700646710 /* Supporting Files */,
+			);
+			path = ASADeepDictionary;
+			sourceTree = "<group>";
+		};
+		D50F376416ECC9F700646710 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D50F376516ECC9F700646710 /* ASADeepDictionary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D50F375B16ECC9F700646710 /* ASADeepDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50F376A16ECC9F700646710 /* Build configuration list for PBXNativeTarget "ASADeepDictionary" */;
+			buildPhases = (
+				D50F375816ECC9F700646710 /* Sources */,
+				D50F375916ECC9F700646710 /* Frameworks */,
+				D50F375A16ECC9F700646710 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASADeepDictionary;
+			productName = ASADeepDictionary;
+			productReference = D50F375C16ECC9F700646710 /* ASADeepDictionary */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D50F375416ECC9F700646710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = AndrewShmig;
+			};
+			buildConfigurationList = D50F375716ECC9F700646710 /* Build configuration list for PBXProject "ASADeepDictionary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D50F375316ECC9F700646710;
+			productRefGroup = D50F375D16ECC9F700646710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D50F375B16ECC9F700646710 /* ASADeepDictionary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D50F375816ECC9F700646710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50F376316ECC9F700646710 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D50F376816ECC9F700646710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D50F376916ECC9F700646710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D50F376B16ECC9F700646710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASADeepDictionary/ASADeepDictionary-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D50F376C16ECC9F700646710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASADeepDictionary/ASADeepDictionary-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D50F375716ECC9F700646710 /* Build configuration list for PBXProject "ASADeepDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50F376816ECC9F700646710 /* Debug */,
+				D50F376916ECC9F700646710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50F376A16ECC9F700646710 /* Build configuration list for PBXNativeTarget "ASADeepDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50F376B16ECC9F700646710 /* Debug */,
+				D50F376C16ECC9F700646710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D50F375416ECC9F700646710 /* Project object */;
+}
