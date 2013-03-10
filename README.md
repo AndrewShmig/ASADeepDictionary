@@ -1,10 +1,6 @@
 More info: http://developing-ios-apps-with-andrew-shmig.blogspot.ru/2013/03/asadeepdictionary.html
 
-TODO:
-1. initWithJSON
-2. Aliases
-3. XML
-4. etc
+TODO: initWithJSON, Aliases, XML etc
 
 ASADeepDictionary
 =================
