@@ -1,3 +1,5 @@
+Authors blog: http://developing-ios-apps-with-andrew-shmig.blogspot.ru
+
 ASADeepDictionary
 =================
 
