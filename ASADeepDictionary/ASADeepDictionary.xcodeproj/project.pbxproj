@@ -34,7 +34,7 @@
 		D50F376616ECC9F700646710 /* ASADeepDictionary.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ASADeepDictionary.1; sourceTree = "<group>"; };
 		D50F376E16ECCB8100646710 /* ASADeepDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASADeepDictionary.h; sourceTree = "<group>"; };
 		D50F376F16ECCB8100646710 /* ASADeepDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASADeepDictionary.m; sourceTree = "<group>"; };
-		D56F3CCC16ECE664006E04A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D56F3CCD16ECE8D2006E04A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 		D50F375316ECC9F700646710 = {
 			isa = PBXGroup;
 			children = (
-				D56F3CCC16ECE664006E04A5 /* README.md */,
+				D56F3CCD16ECE8D2006E04A5 /* README.md */,
 				D50F376D16ECCB5E00646710 /* ASADeepDictionary Class */,
 				D50F376116ECC9F700646710 /* ASADeepDictionary */,
 				D50F375E16ECC9F700646710 /* Frameworks */,
