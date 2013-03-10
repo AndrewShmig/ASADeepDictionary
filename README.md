@@ -1,4 +1,4 @@
-Authors blog: http://developing-ios-apps-with-andrew-shmig.blogspot.ru
+More info: http://developing-ios-apps-with-andrew-shmig.blogspot.ru/2013/03/asadeepdictionary.html
 
 ASADeepDictionary
 =================
