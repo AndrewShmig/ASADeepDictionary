@@ -18,6 +18,19 @@ Deep dictionary using KVC (+JSON, XML)
     NSLog(@"user record: %@", [dd valueForKey:@"cookies.user"]);
 </code>
 
+<b>Output:</b>
+<code>
+
+    login: AndrewShmig
+    email: andrewshmig@gmail.com 
+    user record: {
+        email = "andrewshmig@gmail.com";
+        locale = "ru_RU";
+        login = AndrewShmig;
+    } 
+    
+</code>
+
 <b>Example #2:</b> ASADeepDictionary to JSON convertion
 <code> 
 
@@ -29,6 +42,20 @@ Deep dictionary using KVC (+JSON, XML)
     
     NSData *jsonData = [dd JSON];
     NSLog(@"JSON: %@", [NSString stringWithUTF8String:[jsonData bytes]]);
+</code>
+
+<b>Output:</b>
+<code>
+
+    JSON: {
+    "cookies" : {
+        "user" : {
+            "login" : "AndrewShmig",
+            "email" : "andrewshmig@gmail.com",
+            "locale" : "ru_RU"
+        }
+    }
+}
 </code>
 
 <b>Example #3:</b> Init ASADeepDictionary with another dictionary
@@ -51,4 +78,13 @@ Deep dictionary using KVC (+JSON, XML)
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] initWithDictionary:dic];
     
     NSLog(@"orientation: %@", [dd valueForKey:@"window.position.orientation"]);
+</code>
+
+<b>Output:</b>
+<code>
+
+    orientation: {
+        horizontalAlign = YES;
+        verticalAlign = NO;
+    }
 </code>
