@@ -17,21 +17,12 @@ int main(int argc, const char * argv[])
     [dd setValue:@{@"login":@"AndrewShmig", @"email":@"andrewshmig@gmail.com"}
           forKey:@"cookies.github.usergroup.admin"];
     
-    [dd setAlias:@"adminInfo" forKey:@"cookies.github.usergroup.admin"];
-    [dd setAlias:@"githubService" forKeyPath:@"cookies.github"];
+    [dd setAlias:@"githubAdmin" forKey:@"github.usergroup.admin"];
     
-    NSLog(@"login: %@", [dd valueForKey:@"$adminInfo.login"]);
-    NSLog(@"email: %@", [dd valueForKey:@"$adminInfo.email"]);
+    NSLog(@"admin: %@", [dd valueForKey:@"cookies.$githubAdmin"]);
     
-    NSLog(@"githubService: %@", [dd valueForKey:@"$githubService"]);
-    NSLog(@"github usergroup: %@", [dd valueForKey:@"$githubService.usergroup"]);
-    
-    [dd removeAlias:@"adminInfo"];
-    
-    NSLog(@"aliases: %@", [dd aliases]);
-    
-    NSLog(@"%@", dd);
-    
+    [dd release];
+    dd = nil;
   }
   
   return 0;

@@ -20,5 +20,6 @@
 - (void)setAlias:(NSString *)alias forKey:(NSString *)key;
 - (void)setAlias:(NSString *)alias forKeyPath:(NSString *)keyPath;
 - (void)removeAlias:(NSString *)alias;
+- (void)removeAllAliases;
 
 @end

@@ -132,17 +132,21 @@
   [_aliases removeObjectForKey:[NSString stringWithFormat:@"$%@", alias]];
 }
 
+- (void)removeAllAliases {
+  [_aliases removeAllObjects];
+}
+
 #pragma mark - Description & main getters
 - (NSString *) description {
   return [_deepDictionary description];
 }
 
 - (NSMutableDictionary *)deepDictionary {
-  return [_deepDictionary copy];
+  return [[_deepDictionary copy] autorelease];
 }
 
 - (NSMutableDictionary *)aliases {
-  return [_aliases copy];
+  return [[_aliases copy] autorelease];
 }
 
 #pragma mark - Dealloc
@@ -170,6 +174,8 @@
   // removing last '.' char
   [parsedString
    deleteCharactersInRange:NSMakeRange(parsedString.length - 1, 1)];
+  
+  [parsedString autorelease];
   
   return parsedString;
 }
