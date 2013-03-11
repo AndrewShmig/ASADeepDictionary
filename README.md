@@ -126,3 +126,65 @@ Deep dictionary using KVC (+JSON, XML)
         };
     }
 </code>
+
+<b>Example #5:</b> Using aliases
+<code>
+
+    ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
+    [dd setValue:@{@"login":@"AndrewShmig", @"email":@"andrewshmig@gmail.com"}
+          forKey:@"cookies.github.usergroup.admin"];
+    
+    [dd setAlias:@"adminInfo" forKey:@"cookies.github.usergroup.admin"];
+    [dd setAlias:@"githubService" forKeyPath:@"cookies.github"];
+    
+    NSLog(@"login: %@", [dd valueForKey:@"$adminInfo.login"]);
+    NSLog(@"email: %@", [dd valueForKey:@"$adminInfo.email"]);
+    
+    NSLog(@"githubService: %@", [dd valueForKey:@"$githubService"]);
+    NSLog(@"github usergroup: %@", [dd valueForKey:@"$githubService.usergroup"]);
+    
+    [dd removeAlias:@"adminInfo"];
+    
+    NSLog(@"aliases: %@", [dd aliases]);
+    
+    NSLog(@"%@", dd);
+</code>
+
+<b>Output:</b>
+<code>
+
+    login: AndrewShmig
+    email: andrewshmig@gmail.com
+    githubService: {
+        usergroup =     {
+            admin =         {
+                email = "andrewshmig@gmail.com";
+                login = AndrewShmig;
+            };
+        };
+    }
+    
+    github usergroup: {
+        admin =     {
+            email = "andrewshmig@gmail.com";
+            login = AndrewShmig;
+        };
+    }
+    
+    aliases: {
+        "$githubService" = "cookies.github";
+    }
+    
+    {
+    cookies =     {
+        github =         {
+            usergroup =             {
+                admin =                 {
+                    email = "andrewshmig@gmail.com";
+                    login = AndrewShmig;
+                };
+            };
+        };
+    };
+}
+</code>
