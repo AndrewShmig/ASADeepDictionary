@@ -13,20 +13,20 @@ int main(int argc, const char * argv[])
 {
   @autoreleasepool {
     
-    ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
+    NSDictionary *dic = @{@"key":@"value",
+                          @"key2":@"value2",
+                          @"user":@{
+                              @"name":@"AndrewShmig",
+                              @"email":@"andrewshmig@gmail.com"
+                              }};
     
-    [dd setValue:@"Hello deep dictionary!"
-          forKey:@"cookies.user.msg"];
+    ASADeepDictionary *dd = [[ASADeepDictionary alloc]
+                             initWithDictionary:dic];
+
+    ASADeepDictionary *dd2 = [[ASADeepDictionary alloc]
+                              initWithJSON:[dd JSON]];
     
-    ASADeepDictionary *dd2 = [[ASADeepDictionary alloc] init];
-    [dd2 setValue:@"andrewshmig@gmail.com" forKey:@"localInfo.email"];
-    [dd2 setValue:@"178 MB" forKey:@"localInfo.bufferSize"];
-    
-    [dd setValue:[dd2 deepDictionary] forKey:@"cookies.user.info"];
-    
-    NSLog(@"%@", dd);
-    
-    NSLog(@"buffer size: %@", [dd valueForKey:@"cookies.user.info.localInfo.bufferSize"]);
+    NSLog(@"%@", dd2);
     
   }
 

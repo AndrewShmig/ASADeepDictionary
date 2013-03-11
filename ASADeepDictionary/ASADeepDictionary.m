@@ -33,6 +33,19 @@
   return self;
 }
 
+- (id)initWithJSON:(NSData *)jsonObject {
+  self = [super init];
+  
+  if(self) {
+    _deepDictionary = [NSJSONSerialization
+                       JSONObjectWithData:jsonObject
+                       options:NSJSONReadingMutableContainers
+                       error:nil];
+  }
+  
+  return self;
+}
+
 #pragma mark - JSON
 - (NSData *)JSON {
   return [NSJSONSerialization

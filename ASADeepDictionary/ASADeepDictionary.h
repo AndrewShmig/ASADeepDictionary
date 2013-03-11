@@ -11,6 +11,7 @@
 @interface ASADeepDictionary : NSObject
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
+- (id)initWithJSON:(NSData *)jsonObject;
 
 - (NSMutableDictionary *)deepDictionary;
 - (NSData *)JSON;
