@@ -13,23 +13,27 @@ int main(int argc, const char * argv[])
 {
   @autoreleasepool {
     
-    NSDictionary *dic = @{@"key":@"value",
-                          @"key2":@"value2",
-                          @"user":@{
-                              @"name":@"AndrewShmig",
-                              @"email":@"andrewshmig@gmail.com"
-                              }};
+    ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
+    [dd setValue:@{@"login":@"AndrewShmig", @"email":@"andrewshmig@gmail.com"}
+          forKey:@"cookies.github.usergroup.admin"];
     
-    ASADeepDictionary *dd = [[ASADeepDictionary alloc]
-                             initWithDictionary:dic];
-
-    ASADeepDictionary *dd2 = [[ASADeepDictionary alloc]
-                              initWithJSON:[dd JSON]];
+    [dd setAlias:@"adminInfo" forKey:@"cookies.github.usergroup.admin"];
+    [dd setAlias:@"githubService" forKeyPath:@"cookies.github"];
     
-    NSLog(@"%@", dd2);
+    NSLog(@"login: %@", [dd valueForKey:@"$adminInfo.login"]);
+    NSLog(@"email: %@", [dd valueForKey:@"$adminInfo.email"]);
+    
+    NSLog(@"githubService: %@", [dd valueForKey:@"$githubService"]);
+    NSLog(@"github usergroup: %@", [dd valueForKey:@"$githubService.usergroup"]);
+    
+    [dd removeAlias:@"adminInfo"];
+    
+    NSLog(@"aliases: %@", [dd aliases]);
+    
+    NSLog(@"%@", dd);
     
   }
-
+  
   return 0;
 }
 

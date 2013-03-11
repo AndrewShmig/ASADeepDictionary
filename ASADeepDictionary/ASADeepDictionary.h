@@ -14,6 +14,11 @@
 - (id)initWithJSON:(NSData *)jsonObject;
 
 - (NSMutableDictionary *)deepDictionary;
+- (NSMutableDictionary *)aliases;
 - (NSData *)JSON;
+
+- (void)setAlias:(NSString *)alias forKey:(NSString *)key;
+- (void)setAlias:(NSString *)alias forKeyPath:(NSString *)keyPath;
+- (void)removeAlias:(NSString *)alias;
 
 @end

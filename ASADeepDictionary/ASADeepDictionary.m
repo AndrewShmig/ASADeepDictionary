@@ -10,6 +10,7 @@
 
 @implementation ASADeepDictionary {
   NSMutableDictionary *_deepDictionary;
+  NSMutableDictionary *_aliases;
 }
 
 #pragma mark - init
@@ -18,6 +19,7 @@
   
   if(self){
     _deepDictionary = [[NSMutableDictionary alloc] init];
+    _aliases = [[NSMutableDictionary alloc] init];
   }
   
   return self;
@@ -28,6 +30,7 @@
   
   if(self) {
     _deepDictionary = [dictionary mutableCopy];
+    _aliases = [[NSMutableDictionary alloc] init];
   }
   
   return self;
@@ -41,6 +44,8 @@
                        JSONObjectWithData:jsonObject
                        options:NSJSONReadingMutableContainers
                        error:nil];
+    
+    _aliases = [[NSMutableDictionary alloc] init];
   }
   
   return self;
@@ -56,6 +61,8 @@
 
 #pragma mark - KVC
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+  key = [self ASA_PRIVATE_METHOD_parseAliasesInKeyPath:key];
+  
   NSArray *pathComponents = [key componentsSeparatedByString:@"."];
   
   if(pathComponents == nil || [pathComponents count] == 0)
@@ -79,6 +86,8 @@
 }
 
 - (id)valueForUndefinedKey:(NSString *)key {
+  key = [self ASA_PRIVATE_METHOD_parseAliasesInKeyPath:key];
+  
   NSArray *pathComponents = [key componentsSeparatedByString:@"."];
   
   if(pathComponents == nil || [pathComponents count] == 0)
@@ -110,7 +119,20 @@
   return [self valueForUndefinedKey:keyPath];
 }
 
-#pragma mark - Description
+- (void)setAlias:(NSString *)alias forKey:(NSString *)key {
+  [_aliases setValue:key
+              forKey:[NSString stringWithFormat:@"$%@", alias]];
+}
+
+- (void)setAlias:(NSString *)alias forKeyPath:(NSString *)keyPath {
+  [self setAlias:alias forKey:keyPath];
+}
+
+- (void)removeAlias:(NSString *)alias {
+  [_aliases removeObjectForKey:[NSString stringWithFormat:@"$%@", alias]];
+}
+
+#pragma mark - Description & main getters
 - (NSString *) description {
   return [_deepDictionary description];
 }
@@ -119,10 +141,37 @@
   return [_deepDictionary copy];
 }
 
+- (NSMutableDictionary *)aliases {
+  return [_aliases copy];
+}
+
 #pragma mark - Dealloc
 - (void)dealloc {
   [_deepDictionary release];
+  [_aliases release];
   [super dealloc];
+}
+
+#pragma mark - Private methods
+- (NSString *)ASA_PRIVATE_METHOD_parseAliasesInKeyPath:(NSString *)keyPath {
+  NSMutableString *parsedString = [[NSMutableString alloc] init];
+  
+  NSArray *pathComponents = [keyPath componentsSeparatedByString:@"."];
+  for(NSString *pathComponent in pathComponents) {
+    if(_aliases[pathComponent] != nil) {
+      [parsedString appendString:_aliases[pathComponent]];
+    } else {
+      [parsedString appendString:pathComponent];
+    }
+    
+    [parsedString appendString:@"."];
+  }
+  
+  // removing last '.' char
+  [parsedString
+   deleteCharactersInRange:NSMakeRange(parsedString.length - 1, 1)];
+  
+  return parsedString;
 }
 
 @end
