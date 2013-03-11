@@ -1,10 +1,8 @@
 More info: http://developing-ios-apps-with-andrew-shmig.blogspot.ru/2013/03/asadeepdictionary.html
 
 TODO: 
-+ initWithJSON
 + Aliases
 + XML
-+ etc
 
 ASADeepDictionary
 =================
@@ -94,5 +92,37 @@ Deep dictionary using KVC (+JSON, XML)
     orientation: {
         horizontalAlign = YES;
         verticalAlign = NO;
+    }
+</code>
+
+<b>Example #4:</b> Init ASADeepDictionary with JSON object
+<code>
+
+    NSDictionary *dic = @{@"key":@"value",
+                          @"key2":@"value2",
+                          @"user":@{
+                              @"name":@"AndrewShmig",
+                              @"email":@"andrewshmig@gmail.com"
+                              }};
+    
+    ASADeepDictionary *dd = [[ASADeepDictionary alloc]
+                             initWithDictionary:dic];
+
+    ASADeepDictionary *dd2 = [[ASADeepDictionary alloc]
+                              initWithJSON:[dd JSON]];
+    
+    NSLog(@"%@", dd2);
+</code>
+
+<b>Output:</b>
+<code>
+
+    {
+        key = value;
+        key2 = value2;
+        user =     {
+            email = "andrewshmig@gmail.com";
+            name = AndrewShmig;
+        };
     }
 </code>
