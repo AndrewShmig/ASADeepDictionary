@@ -1,7 +1,6 @@
 More info: http://developing-ios-apps-with-andrew-shmig.blogspot.ru/2013/03/asadeepdictionary.html
 
 TODO: 
-+ Aliases
 + XML
 
 ASADeepDictionary
