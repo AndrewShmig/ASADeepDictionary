@@ -13,7 +13,7 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 - (id)initWithJSON:(NSData *)jsonObject;
 
-- (NSMutableDictionary *)deepDictionary;
+- (NSMutableDictionary *)dictionary;
 - (NSMutableDictionary *)aliases;
 - (NSData *)JSON;
 

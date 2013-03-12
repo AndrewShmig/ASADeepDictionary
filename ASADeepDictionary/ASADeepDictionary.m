@@ -72,15 +72,21 @@
   [pathComponents
    enumerateObjectsUsingBlock:^(id pathComponent, NSUInteger idx, BOOL *stop) {
      
-     if(currentNode[pathComponent] == nil ||
-        ![currentNode[pathComponent] isKindOfClass:[NSDictionary class]])
-        [currentNode setValue:[NSMutableDictionary dictionary]
-                       forKey:pathComponent];
+     id nextNode = currentNode[pathComponent];
      
-     if(idx == [pathComponents count] - 1)
-       currentNode[pathComponent] = value;
-     else
-       currentNode = currentNode[pathComponent];
+     BOOL nextNodeIsNil = (nextNode == nil);
+     BOOL nextNodeIsDictionary = [nextNode
+                                  isKindOfClass:[NSMutableDictionary class]];
+     BOOL lastPathComponent = (idx == [pathComponents count] - 1);
+     
+     if((nextNodeIsNil || !nextNodeIsDictionary) && !lastPathComponent) {
+       [currentNode setObject:[NSMutableDictionary dictionary]
+                       forKey:pathComponent];
+     } else if(idx == [pathComponents count] - 1) {
+       currentNode[pathComponent] = [value mutableCopy];
+     }
+     
+     currentNode = currentNode[pathComponent];
      
    }];
 }
@@ -97,14 +103,26 @@
   [pathComponents
    enumerateObjectsUsingBlock:^(id pathComponent, NSUInteger idx, BOOL *stop) {
      
-     if(currentNode[pathComponent] == nil) {
+     id nextNode = nil;
+     
+     if([pathComponent hasPrefix:@"#"]) { // array index
+       NSString *indexAsString = [pathComponent substringFromIndex:1];
+       int indexAsInteger = [indexAsString intValue];
        
-       *stop = YES;
-       currentNode = nil;
+       BOOL validArrayIndex = [indexAsString intValue] < [currentNode count];
+       BOOL currentNodeIsArray = [currentNode
+                                  isKindOfClass:[NSMutableArray class]];
        
+       if(validArrayIndex && currentNodeIsArray)
+         nextNode = currentNode[indexAsInteger];
      } else {
-       currentNode = currentNode[pathComponent];
+       nextNode = currentNode[pathComponent];
      }
+     
+     if(nextNode == nil)
+       *stop = YES;
+     
+     currentNode = nextNode;
      
    }];
   
@@ -120,7 +138,7 @@
 }
 
 - (void)setAlias:(NSString *)alias forKey:(NSString *)key {
-  [_aliases setValue:key
+  [_aliases setObject:key
               forKey:[NSString stringWithFormat:@"$%@", alias]];
 }
 
@@ -141,7 +159,7 @@
   return [_deepDictionary description];
 }
 
-- (NSMutableDictionary *)deepDictionary {
+- (NSMutableDictionary *)dictionary {
   return [[_deepDictionary copy] autorelease];
 }
 
