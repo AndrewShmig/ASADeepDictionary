@@ -187,3 +187,59 @@ Deep dictionary using KVC (+JSON, XML)
     };
     }
 </code>
+
+<b>Example #6:</b> Array iteration with '#' placeholder
+<code>
+
+    ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
+    
+    NSArray *data = @[@{@"name":@"Andrew", @"age":@"21"},
+                      @{@"name":@"Igori", @"age":@"25"},
+                      @{@"name":@"Masha", @"age":@"19"}];
+    
+    [dd setAlias:@"data" forKey:@"cookies.localstoragetype.xml.data"];
+    [dd setValue:data forKey:@"$data"];
+    
+    NSLog(@"%@", dd);
+    
+    NSUInteger count = [[dd valueForKey:@"$data"] count];
+    for(int i=0; i<count; i++) {
+      NSString *namePath = [NSString stringWithFormat:@"$data.#%d.name", i];
+      NSString *agePath  = [NSString stringWithFormat:@"$data.#%d.age", i];
+      
+      NSString *name = [dd valueForKey:namePath];
+      NSString *age = [dd valueForKey:agePath];
+      
+      NSLog(@"%@ is %@ years old!", name, age);
+    }
+</code>
+
+<b>Output:</b>
+<code>
+    {
+    cookies =     {
+        localstoragetype =         {
+            xml =             {
+                data =                 (
+                                        {
+                        age = 21;
+                        name = Andrew;
+                    },
+                                        {
+                        age = 25;
+                        name = Igori;
+                    },
+                                        {
+                        age = 19;
+                        name = Masha;
+                    }
+                );
+            };
+        };
+    };
+    }
+    
+    Andrew is 21 years old!
+    Igori is 25 years old!
+    Masha is 19 years old!
+</code>
