@@ -9,7 +9,7 @@ ASADeepDictionary
 Deep dictionary using KVC (+JSON, XML)
 
 <b>Example #1:</b> ASADeepDictionary allocation and initialization (writing and reading values)
-<code>
+````
 
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
     
@@ -21,7 +21,7 @@ Deep dictionary using KVC (+JSON, XML)
     NSLog(@"email: %@", [dd valueForKey:@"cookies.user.email"]);
     
     NSLog(@"user record: %@", [dd valueForKey:@"cookies.user"]);
-</code>
+````
 
 <b>Output:</b>
 <code>
