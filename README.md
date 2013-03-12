@@ -9,8 +9,7 @@ ASADeepDictionary
 Deep dictionary using KVC (+JSON, XML)
 
 <b>Example #1:</b> ASADeepDictionary allocation and initialization (writing and reading values)
-````
-
+````objective-c
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
     
     [dd setValue:@"AndrewShmig" forKey:@"cookies.user.login"];
@@ -24,8 +23,7 @@ Deep dictionary using KVC (+JSON, XML)
 ````
 
 <b>Output:</b>
-<code>
-
+````objective-c
     login: AndrewShmig
     email: andrewshmig@gmail.com 
     user record: {
@@ -33,12 +31,10 @@ Deep dictionary using KVC (+JSON, XML)
         locale = "ru_RU";
         login = AndrewShmig;
     } 
-    
-</code>
+````
 
 <b>Example #2:</b> ASADeepDictionary to JSON convertion
-<code> 
-
+````objective-c
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
     
     [dd setValue:@"AndrewShmig" forKey:@"cookies.user.login"];
@@ -47,11 +43,10 @@ Deep dictionary using KVC (+JSON, XML)
     
     NSData *jsonData = [dd JSON];
     NSLog(@"JSON: %@", [NSString stringWithUTF8String:[jsonData bytes]]);
-</code>
+````
 
 <b>Output:</b>
-<code>
-
+````objective-c
     JSON: {
     "cookies" : {
         "user" : {
@@ -60,12 +55,11 @@ Deep dictionary using KVC (+JSON, XML)
             "locale" : "ru_RU"
         }
     }
-}
-</code>
+    }
+````
 
 <b>Example #3:</b> Init ASADeepDictionary with another dictionary
-<code>
-
+````objective-c
     NSDictionary *dic = @{@"window":@{
                               @"position": @{
                                   @"x": @"100",
@@ -83,20 +77,18 @@ Deep dictionary using KVC (+JSON, XML)
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] initWithDictionary:dic];
     
     NSLog(@"orientation: %@", [dd valueForKey:@"window.position.orientation"]);
-</code>
+````
 
 <b>Output:</b>
-<code>
-
+````objective-c
     orientation: {
         horizontalAlign = YES;
         verticalAlign = NO;
     }
-</code>
+````
 
 <b>Example #4:</b> Init ASADeepDictionary with JSON object
-<code>
-
+````objective-c
     NSDictionary *dic = @{@"key":@"value",
                           @"key2":@"value2",
                           @"user":@{
@@ -111,11 +103,10 @@ Deep dictionary using KVC (+JSON, XML)
                               initWithJSON:[dd JSON]];
     
     NSLog(@"%@", dd2);
-</code>
+````
 
 <b>Output:</b>
-<code>
-
+````objective-c
     {
         key = value;
         key2 = value2;
@@ -124,11 +115,10 @@ Deep dictionary using KVC (+JSON, XML)
             name = AndrewShmig;
         };
     }
-</code>
+````
 
 <b>Example #5:</b> Using aliases
-<code>
-
+````objective-c
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
     [dd setValue:@{@"login":@"AndrewShmig", @"email":@"andrewshmig@gmail.com"}
           forKey:@"cookies.github.usergroup.admin"];
@@ -147,11 +137,10 @@ Deep dictionary using KVC (+JSON, XML)
     NSLog(@"aliases: %@", [dd aliases]);
     
     NSLog(@"%@", dd);
-</code>
+````
 
 <b>Output:</b>
-<code>
-
+````objective-c
     login: AndrewShmig
     email: andrewshmig@gmail.com
     githubService: {
@@ -186,11 +175,10 @@ Deep dictionary using KVC (+JSON, XML)
         };
     };
     }
-</code>
+````
 
 <b>Example #6:</b> Array iteration with '#' placeholder
-<code>
-
+````objective-c
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
     
     NSArray *data = @[@{@"name":@"Andrew", @"age":@"21"},
@@ -212,11 +200,10 @@ Deep dictionary using KVC (+JSON, XML)
       
       NSLog(@"%@ is %@ years old!", name, age);
     }
-</code>
+````
 
 <b>Output:</b>
-<code>
-
+````objective-c
     {
     cookies =     {
         localstoragetype =         {
@@ -243,4 +230,4 @@ Deep dictionary using KVC (+JSON, XML)
     Andrew is 21 years old!
     Igori is 25 years old!
     Masha is 19 years old!
-</code>
+````
