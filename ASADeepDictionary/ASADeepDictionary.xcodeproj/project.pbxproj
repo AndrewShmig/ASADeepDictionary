@@ -13,9 +13,6 @@
 		D56CA4BE16F04581008A31EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4BC16F04581008A31EB /* InfoPlist.strings */; };
 		D56CA4C016F04581008A31EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CA4BF16F04581008A31EB /* main.m */; };
 		D56CA4C416F04581008A31EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CA4C316F04581008A31EB /* AppDelegate.m */; };
-		D56CA4C616F04581008A31EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4C516F04581008A31EB /* Default.png */; };
-		D56CA4C816F04581008A31EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4C716F04581008A31EB /* Default@2x.png */; };
-		D56CA4CA16F04581008A31EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4C916F04581008A31EB /* Default-568h@2x.png */; };
 		D56CA4D316F045A0008A31EB /* ASADeepDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CA4D216F045A0008A31EB /* ASADeepDictionary.m */; };
 		D56CA4D516F045CF008A31EB /* JSONDataExample.json in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4D416F045CF008A31EB /* JSONDataExample.json */; };
 /* End PBXBuildFile section */
@@ -31,9 +28,6 @@
 		D56CA4C116F04581008A31EB /* ASADeepDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASADeepDictionary-Prefix.pch"; sourceTree = "<group>"; };
 		D56CA4C216F04581008A31EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D56CA4C316F04581008A31EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D56CA4C516F04581008A31EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D56CA4C716F04581008A31EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		D56CA4C916F04581008A31EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D56CA4D116F045A0008A31EB /* ASADeepDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASADeepDictionary.h; sourceTree = "<group>"; };
 		D56CA4D216F045A0008A31EB /* ASADeepDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASADeepDictionary.m; sourceTree = "<group>"; };
 		D56CA4D416F045CF008A31EB /* JSONDataExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONDataExample.json; sourceTree = "<group>"; };
@@ -99,9 +93,6 @@
 				D56CA4BC16F04581008A31EB /* InfoPlist.strings */,
 				D56CA4BF16F04581008A31EB /* main.m */,
 				D56CA4C116F04581008A31EB /* ASADeepDictionary-Prefix.pch */,
-				D56CA4C516F04581008A31EB /* Default.png */,
-				D56CA4C716F04581008A31EB /* Default@2x.png */,
-				D56CA4C916F04581008A31EB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,9 +158,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56CA4BE16F04581008A31EB /* InfoPlist.strings in Resources */,
-				D56CA4C616F04581008A31EB /* Default.png in Resources */,
-				D56CA4C816F04581008A31EB /* Default@2x.png in Resources */,
-				D56CA4CA16F04581008A31EB /* Default-568h@2x.png in Resources */,
 				D56CA4D516F045CF008A31EB /* JSONDataExample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +284,7 @@
 				D56CA4CF16F04581008A31EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
