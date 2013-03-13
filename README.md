@@ -5,6 +5,30 @@ ASADeepDictionary
 
 Deep dictionary using KVC (+JSON)
 
+
+<b>Example #0:</b>
+
+JSONDataExample.json: http://paste.ubuntu.com/5609872/ 
+
+````objective-c
+  NSString *pathToJSON = [[NSBundle mainBundle] pathForResource:@"JSONDataExample"
+                                                         ofType:@"json"];
+  NSLog(@"pathToJSON: %@", pathToJSON);
+  
+  NSData *json = [[NSString stringWithContentsOfFile:pathToJSON
+                                             encoding:NSUTF8StringEncoding
+                                                error:nil] dataUsingEncoding:NSUTF8StringEncoding];
+  
+  ASADeepDictionary *dd = [[ASADeepDictionary alloc] initWithJSON:json];
+  
+  [dd setAlias:@"mainServlet" forKey:@"web-app.servlet"];
+  [dd setAlias:@"logFile" forKey:@"init-param.dataLogLocation"];
+  NSLog(@"dataLogLocation: %@", [dd valueForKey:@"$mainServlet.#4.$logFile"]);
+  
+  [dd release];
+  dd = nil;
+````
+
 <b>Example #1:</b> ASADeepDictionary allocation and initialization (writing and reading values)
 ````objective-c
     ASADeepDictionary *dd = [[ASADeepDictionary alloc] init];
