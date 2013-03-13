@@ -30,7 +30,9 @@
   
   ASADeepDictionary *dd = [[ASADeepDictionary alloc] initWithJSON:json];
   
-  NSLog(@"dataLogLocation: %@", [dd valueForKey:@"web-app.servlet.#4.init-param.dataLogLocation"]);
+  [dd setAlias:@"mainServlet" forKey:@"web-app.servlet"];
+  [dd setAlias:@"logFile" forKey:@"init-param.dataLogLocation"];
+  NSLog(@"dataLogLocation: %@", [dd valueForKey:@"$mainServlet.#4.$logFile"]);
   
   [dd release];
   dd = nil;
