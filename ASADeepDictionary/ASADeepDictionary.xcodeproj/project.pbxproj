@@ -7,110 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D50F376016ECC9F700646710 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50F375F16ECC9F700646710 /* Foundation.framework */; };
-		D50F376316ECC9F700646710 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D50F376216ECC9F700646710 /* main.m */; };
-		D50F376716ECC9F700646710 /* ASADeepDictionary.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D50F376616ECC9F700646710 /* ASADeepDictionary.1 */; };
-		D50F377016ECCB8100646710 /* ASADeepDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D50F376F16ECCB8100646710 /* ASADeepDictionary.m */; };
+		D56CA4B416F04581008A31EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56CA4B316F04581008A31EB /* UIKit.framework */; };
+		D56CA4B616F04581008A31EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56CA4B516F04581008A31EB /* Foundation.framework */; };
+		D56CA4B816F04581008A31EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56CA4B716F04581008A31EB /* CoreGraphics.framework */; };
+		D56CA4BE16F04581008A31EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4BC16F04581008A31EB /* InfoPlist.strings */; };
+		D56CA4C016F04581008A31EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CA4BF16F04581008A31EB /* main.m */; };
+		D56CA4C416F04581008A31EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CA4C316F04581008A31EB /* AppDelegate.m */; };
+		D56CA4C616F04581008A31EB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4C516F04581008A31EB /* Default.png */; };
+		D56CA4C816F04581008A31EB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4C716F04581008A31EB /* Default@2x.png */; };
+		D56CA4CA16F04581008A31EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4C916F04581008A31EB /* Default-568h@2x.png */; };
+		D56CA4D316F045A0008A31EB /* ASADeepDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = D56CA4D216F045A0008A31EB /* ASADeepDictionary.m */; };
+		D56CA4D516F045CF008A31EB /* JSONDataExample.json in Resources */ = {isa = PBXBuildFile; fileRef = D56CA4D416F045CF008A31EB /* JSONDataExample.json */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		D50F375A16ECC9F700646710 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				D50F376716ECC9F700646710 /* ASADeepDictionary.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		D50F375C16ECC9F700646710 /* ASADeepDictionary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ASADeepDictionary; sourceTree = BUILT_PRODUCTS_DIR; };
-		D50F375F16ECC9F700646710 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D50F376216ECC9F700646710 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D50F376516ECC9F700646710 /* ASADeepDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASADeepDictionary-Prefix.pch"; sourceTree = "<group>"; };
-		D50F376616ECC9F700646710 /* ASADeepDictionary.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ASADeepDictionary.1; sourceTree = "<group>"; };
-		D50F376E16ECCB8100646710 /* ASADeepDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASADeepDictionary.h; sourceTree = "<group>"; };
-		D50F376F16ECCB8100646710 /* ASADeepDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASADeepDictionary.m; sourceTree = "<group>"; };
+		D56CA4B016F04581008A31EB /* ASADeepDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASADeepDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56CA4B316F04581008A31EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D56CA4B516F04581008A31EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D56CA4B716F04581008A31EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D56CA4BB16F04581008A31EB /* ASADeepDictionary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASADeepDictionary-Info.plist"; sourceTree = "<group>"; };
+		D56CA4BD16F04581008A31EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D56CA4BF16F04581008A31EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D56CA4C116F04581008A31EB /* ASADeepDictionary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASADeepDictionary-Prefix.pch"; sourceTree = "<group>"; };
+		D56CA4C216F04581008A31EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D56CA4C316F04581008A31EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D56CA4C516F04581008A31EB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D56CA4C716F04581008A31EB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D56CA4C916F04581008A31EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D56CA4D116F045A0008A31EB /* ASADeepDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASADeepDictionary.h; sourceTree = "<group>"; };
+		D56CA4D216F045A0008A31EB /* ASADeepDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASADeepDictionary.m; sourceTree = "<group>"; };
+		D56CA4D416F045CF008A31EB /* JSONDataExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JSONDataExample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D50F375916ECC9F700646710 /* Frameworks */ = {
+		D56CA4AD16F04581008A31EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50F376016ECC9F700646710 /* Foundation.framework in Frameworks */,
+				D56CA4B416F04581008A31EB /* UIKit.framework in Frameworks */,
+				D56CA4B616F04581008A31EB /* Foundation.framework in Frameworks */,
+				D56CA4B816F04581008A31EB /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D50F375316ECC9F700646710 = {
+		D56CA4A716F04581008A31EB = {
 			isa = PBXGroup;
 			children = (
-				D50F376D16ECCB5E00646710 /* ASADeepDictionary Class */,
-				D50F376116ECC9F700646710 /* ASADeepDictionary */,
-				D50F375E16ECC9F700646710 /* Frameworks */,
-				D50F375D16ECC9F700646710 /* Products */,
+				D56CA4D416F045CF008A31EB /* JSONDataExample.json */,
+				D56CA4D016F0458C008A31EB /* ASADeepDictionary */,
+				D56CA4B916F04581008A31EB /* ASADeepDictionary */,
+				D56CA4B216F04581008A31EB /* Frameworks */,
+				D56CA4B116F04581008A31EB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D50F375D16ECC9F700646710 /* Products */ = {
+		D56CA4B116F04581008A31EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D50F375C16ECC9F700646710 /* ASADeepDictionary */,
+				D56CA4B016F04581008A31EB /* ASADeepDictionary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D50F375E16ECC9F700646710 /* Frameworks */ = {
+		D56CA4B216F04581008A31EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D50F375F16ECC9F700646710 /* Foundation.framework */,
+				D56CA4B316F04581008A31EB /* UIKit.framework */,
+				D56CA4B516F04581008A31EB /* Foundation.framework */,
+				D56CA4B716F04581008A31EB /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D50F376116ECC9F700646710 /* ASADeepDictionary */ = {
+		D56CA4B916F04581008A31EB /* ASADeepDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				D50F376216ECC9F700646710 /* main.m */,
-				D50F376616ECC9F700646710 /* ASADeepDictionary.1 */,
-				D50F376416ECC9F700646710 /* Supporting Files */,
+				D56CA4C216F04581008A31EB /* AppDelegate.h */,
+				D56CA4C316F04581008A31EB /* AppDelegate.m */,
+				D56CA4BA16F04581008A31EB /* Supporting Files */,
 			);
 			path = ASADeepDictionary;
 			sourceTree = "<group>";
 		};
-		D50F376416ECC9F700646710 /* Supporting Files */ = {
+		D56CA4BA16F04581008A31EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D50F376516ECC9F700646710 /* ASADeepDictionary-Prefix.pch */,
+				D56CA4BB16F04581008A31EB /* ASADeepDictionary-Info.plist */,
+				D56CA4BC16F04581008A31EB /* InfoPlist.strings */,
+				D56CA4BF16F04581008A31EB /* main.m */,
+				D56CA4C116F04581008A31EB /* ASADeepDictionary-Prefix.pch */,
+				D56CA4C516F04581008A31EB /* Default.png */,
+				D56CA4C716F04581008A31EB /* Default@2x.png */,
+				D56CA4C916F04581008A31EB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D50F376D16ECCB5E00646710 /* ASADeepDictionary Class */ = {
+		D56CA4D016F0458C008A31EB /* ASADeepDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				D50F376E16ECCB8100646710 /* ASADeepDictionary.h */,
-				D50F376F16ECCB8100646710 /* ASADeepDictionary.m */,
+				D56CA4D116F045A0008A31EB /* ASADeepDictionary.h */,
+				D56CA4D216F045A0008A31EB /* ASADeepDictionary.m */,
 			);
-			name = "ASADeepDictionary Class";
+			name = ASADeepDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D50F375B16ECC9F700646710 /* ASADeepDictionary */ = {
+		D56CA4AF16F04581008A31EB /* ASADeepDictionary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D50F376A16ECC9F700646710 /* Build configuration list for PBXNativeTarget "ASADeepDictionary" */;
+			buildConfigurationList = D56CA4CD16F04581008A31EB /* Build configuration list for PBXNativeTarget "ASADeepDictionary" */;
 			buildPhases = (
-				D50F375816ECC9F700646710 /* Sources */,
-				D50F375916ECC9F700646710 /* Frameworks */,
-				D50F375A16ECC9F700646710 /* CopyFiles */,
+				D56CA4AC16F04581008A31EB /* Sources */,
+				D56CA4AD16F04581008A31EB /* Frameworks */,
+				D56CA4AE16F04581008A31EB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -118,53 +132,79 @@
 			);
 			name = ASADeepDictionary;
 			productName = ASADeepDictionary;
-			productReference = D50F375C16ECC9F700646710 /* ASADeepDictionary */;
-			productType = "com.apple.product-type.tool";
+			productReference = D56CA4B016F04581008A31EB /* ASADeepDictionary.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D50F375416ECC9F700646710 /* Project object */ = {
+		D56CA4A816F04581008A31EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = AndrewShmig;
 			};
-			buildConfigurationList = D50F375716ECC9F700646710 /* Build configuration list for PBXProject "ASADeepDictionary" */;
+			buildConfigurationList = D56CA4AB16F04581008A31EB /* Build configuration list for PBXProject "ASADeepDictionary" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D50F375316ECC9F700646710;
-			productRefGroup = D50F375D16ECC9F700646710 /* Products */;
+			mainGroup = D56CA4A716F04581008A31EB;
+			productRefGroup = D56CA4B116F04581008A31EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D50F375B16ECC9F700646710 /* ASADeepDictionary */,
+				D56CA4AF16F04581008A31EB /* ASADeepDictionary */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D56CA4AE16F04581008A31EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56CA4BE16F04581008A31EB /* InfoPlist.strings in Resources */,
+				D56CA4C616F04581008A31EB /* Default.png in Resources */,
+				D56CA4C816F04581008A31EB /* Default@2x.png in Resources */,
+				D56CA4CA16F04581008A31EB /* Default-568h@2x.png in Resources */,
+				D56CA4D516F045CF008A31EB /* JSONDataExample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		D50F375816ECC9F700646710 /* Sources */ = {
+		D56CA4AC16F04581008A31EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50F376316ECC9F700646710 /* main.m in Sources */,
-				D50F377016ECCB8100646710 /* ASADeepDictionary.m in Sources */,
+				D56CA4C016F04581008A31EB /* main.m in Sources */,
+				D56CA4C416F04581008A31EB /* AppDelegate.m in Sources */,
+				D56CA4D316F045A0008A31EB /* ASADeepDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		D56CA4BC16F04581008A31EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D56CA4BD16F04581008A31EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		D50F376816ECC9F700646710 /* Debug */ = {
+		D56CA4CB16F04581008A31EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -172,31 +212,29 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		D50F376916ECC9F700646710 /* Release */ = {
+		D56CA4CC16F04581008A31EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -204,59 +242,62 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D50F376B16ECC9F700646710 /* Debug */ = {
+		D56CA4CE16F04581008A31EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASADeepDictionary/ASADeepDictionary-Prefix.pch";
+				INFOPLIST_FILE = "ASADeepDictionary/ASADeepDictionary-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		D50F376C16ECC9F700646710 /* Release */ = {
+		D56CA4CF16F04581008A31EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASADeepDictionary/ASADeepDictionary-Prefix.pch";
+				INFOPLIST_FILE = "ASADeepDictionary/ASADeepDictionary-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D50F375716ECC9F700646710 /* Build configuration list for PBXProject "ASADeepDictionary" */ = {
+		D56CA4AB16F04581008A31EB /* Build configuration list for PBXProject "ASADeepDictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D50F376816ECC9F700646710 /* Debug */,
-				D50F376916ECC9F700646710 /* Release */,
+				D56CA4CB16F04581008A31EB /* Debug */,
+				D56CA4CC16F04581008A31EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D50F376A16ECC9F700646710 /* Build configuration list for PBXNativeTarget "ASADeepDictionary" */ = {
+		D56CA4CD16F04581008A31EB /* Build configuration list for PBXNativeTarget "ASADeepDictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D50F376B16ECC9F700646710 /* Debug */,
-				D50F376C16ECC9F700646710 /* Release */,
+				D56CA4CE16F04581008A31EB /* Debug */,
+				D56CA4CF16F04581008A31EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D50F375416ECC9F700646710 /* Project object */;
+	rootObject = D56CA4A816F04581008A31EB /* Project object */;
 }

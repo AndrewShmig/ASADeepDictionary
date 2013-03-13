@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D50F375B16ECC9F700646710"
-               BuildableName = "ASADeepDictionary"
+               BlueprintIdentifier = "D56CA4AF16F04581008A31EB"
+               BuildableName = "ASADeepDictionary.app"
                BlueprintName = "ASADeepDictionary"
                ReferencedContainer = "container:ASADeepDictionary.xcodeproj">
             </BuildableReference>
@@ -32,8 +32,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D50F375B16ECC9F700646710"
-            BuildableName = "ASADeepDictionary"
+            BlueprintIdentifier = "D56CA4AF16F04581008A31EB"
+            BuildableName = "ASADeepDictionary.app"
             BlueprintName = "ASADeepDictionary"
             ReferencedContainer = "container:ASADeepDictionary.xcodeproj">
          </BuildableReference>
@@ -51,8 +51,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D50F375B16ECC9F700646710"
-            BuildableName = "ASADeepDictionary"
+            BlueprintIdentifier = "D56CA4AF16F04581008A31EB"
+            BuildableName = "ASADeepDictionary.app"
             BlueprintName = "ASADeepDictionary"
             ReferencedContainer = "container:ASADeepDictionary.xcodeproj">
          </BuildableReference>
@@ -69,8 +69,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D50F375B16ECC9F700646710"
-            BuildableName = "ASADeepDictionary"
+            BlueprintIdentifier = "D56CA4AF16F04581008A31EB"
+            BuildableName = "ASADeepDictionary.app"
             BlueprintName = "ASADeepDictionary"
             ReferencedContainer = "container:ASADeepDictionary.xcodeproj">
          </BuildableReference>

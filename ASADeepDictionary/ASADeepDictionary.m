@@ -40,10 +40,11 @@
   self = [super init];
   
   if(self) {
-    _deepDictionary = [NSJSONSerialization
-                       JSONObjectWithData:jsonObject
-                       options:NSJSONReadingMutableContainers
-                       error:nil];
+    if(jsonObject != nil) 
+      _deepDictionary = [NSJSONSerialization
+                         JSONObjectWithData:jsonObject
+                         options:NSJSONReadingMutableContainers
+                         error:nil];
     
     _aliases = [[NSMutableDictionary alloc] init];
   }
