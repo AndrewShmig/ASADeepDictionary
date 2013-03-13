@@ -1,12 +1,9 @@
 More info: http://developing-ios-apps-with-andrew-shmig.blogspot.ru/2013/03/asadeepdictionary.html
 
-TODO: 
-+ XML
-
 ASADeepDictionary
 =================
 
-Deep dictionary using KVC (+JSON, XML)
+Deep dictionary using KVC (+JSON)
 
 <b>Example #1:</b> ASADeepDictionary allocation and initialization (writing and reading values)
 ````objective-c
